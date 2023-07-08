@@ -8,8 +8,9 @@
   font-family: "Inter", sans-serif;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  @apply bg-gray-900;
 }
 
 .orange_gradient {
