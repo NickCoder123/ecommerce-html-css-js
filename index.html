@@ -140,13 +140,36 @@
   <section id="cart" class="cart mt-24">
     <div class="flex mx-auto flex-row justify-center items-center">
       <span class="mt-5 text-5xl font-extrabold leading-[1.15] sm:text-6xl text-center orange_gradient">CART</span>
-      <button id="refreshBtn"
-        class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg ml-10 mt-5">Refresh</button>
+      <button
+        class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg ml-10 mt-5 checkoutBtn">Checkout</button>
+      <p class="text-2xl ml-5 mt-4">Total: <span id="price" class="font-semibold">₹0.00</span></p>
+    </div>
+    <div class="payment">
+      <h1 class="text-[20px] text-[#d3d3d3]">Personal Information</h1>
+      <label>Name and Surname</label>
+      <input type="text" placeholder="Rahul Kumar" class="payInput">
+      <label>Phone Number</label>
+      <input type="text" placeholder="+91 99969 99969" class="payInput">
+      <label>Address</label>
+      <input type="text" placeholder="548, Noida, Noida" class="payInput">
+      <h1 class="payTitle">Card Information</h1>
+      <div class="flex">
+        <img src="./images/icons/visa.png" width="40" alt="" class="mr-[10px]">
+        <img src="./images/icons/master.png" alt="" width="40" class="mr-[10px]">
+      </div>
+      <input type="password" class="payInput" placeholder="Card Number">
+      <div class="flex justify-between">
+        <input type="text" placeholder="mm" class="payInput w-[30%]">
+        <input type="text" placeholder="yyyy" class="payInput w-[30%]">
+        <input type="text" placeholder="cvv" class="payInput w-[30%]">
+      </div>
+      <button class="payButton">Checkout!</button>
+      <span class="close">X</span>
     </div>
 
 
     <div id="cartContainer" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-      
+
     </div>
   </section>
 

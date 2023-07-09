@@ -2,10 +2,11 @@ import products from "./products.js";
 
 const cartContainer = document.querySelector("#cartContainer");
 const addToCartBtns = document.querySelectorAll(".addToCart");
-const refreshBtn = document.querySelector("#refreshBtn");
 const deleteBtn = document.querySelector("#deleteBtn");
+const priceTag = document.querySelector("#price");
 
 const cart = [];
+let totalPrice = 0;
 
 const checkProduct = (id) => {
   let product;
@@ -26,6 +27,14 @@ const addToCart = (id) => {
   console.log(cart.length);
 
   cart.push(itemForCart);
+
+  totalPrice += Number(itemForCart.price);
+  
+  priceTag.innerHTML = `
+    ₹${totalPrice}
+  `;
+
+  updateCart();
 
   console.log('added');
   console.log(itemForCart);
@@ -56,5 +65,15 @@ const updateCart = () => {
   });
 };
 
+const checkoutBtn = document.querySelector(".checkoutBtn");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
 
-refreshBtn.addEventListener('click', updateCart);
+checkoutBtn.addEventListener('click', () => {
+  payment.style.display = "flex";
+  window.scrollTo(0,0);
+});
+
+close.addEventListener('click', () => {
+  payment.style.display = "none";
+});

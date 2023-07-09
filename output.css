@@ -575,11 +575,6 @@ video {
   margin-right: auto;
 }
 
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .-mb-10{
   margin-bottom: -2.5rem;
 }
@@ -624,6 +619,10 @@ video {
   margin-right: 1.25rem;
 }
 
+.mr-\[10px\]{
+  margin-right: 10px;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -656,16 +655,16 @@ video {
   margin-top: 2.25rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
+.mt-auto{
+  margin-top: auto;
 }
 
 .ml-auto{
   margin-left: auto;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
 }
 
 .flex{
@@ -710,6 +709,10 @@ video {
 
 .w-96{
   width: 24rem;
+}
+
+.w-\[30\%\]{
+  width: 30%;
 }
 
 .w-full{
@@ -766,6 +769,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-2{
@@ -883,6 +890,10 @@ video {
   line-height: 1;
 }
 
+.text-\[20px\]{
+  font-size: 20px;
+}
+
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -948,6 +959,11 @@ video {
   letter-spacing: 0.1em;
 }
 
+.text-\[\#d3d3d3\]{
+  --tw-text-opacity: 1;
+  color: rgb(211 211 211 / var(--tw-text-opacity));
+}
+
 .text-blue-400{
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -956,11 +972,6 @@ video {
 .text-gray-100{
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
-.text-gray-300{
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400{
@@ -981,11 +992,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -1103,6 +1109,72 @@ html, body {
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:480px) {
+  .payment {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.payInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.payInput::-moz-placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.payInput::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.payButton {
+  position: absolute;
+  height: 40px;
+  bottom: -40;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
 }
 
 .hover\:bg-blue-600:hover{
