@@ -19,8 +19,7 @@
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
         <a href="./index.html" class="mr-5 hover:text-white cursor-pointer font-medium text-xl">Home</a>
-        <a href="./collections.html"
-          class="mr-5 hover:text-white cursor-pointer font-medium text-xl">Collections</a>
+        <a href="./collections.html" class="mr-5 hover:text-white cursor-pointer font-medium text-xl">Collections</a>
         <a href="./contact.html" class="mr-5 hover:text-white cursor-pointer font-medium text-xl">Contact</a>
       </nav>
       <a href="./cart.html"
@@ -46,14 +45,77 @@
 
   <div class="gradient"></div>
 
-  <!-- CART -->
-  <section class="cart">
-    <p class="mt-5 text-5xl font-extrabold leading-[1.15] sm:text-6xl text-center orange_gradient">CART</p>
+  <!-- COLLECTIONS -->
+  <section id="collections" class="collections mt-24">
+    <p class="head_text">Browse through <span class="orange_gradient">dominating</span> collections</p>
+
+    <!-- PRODUCTS catalog -->
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <div id="product-1" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-1.webp" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Checked Shirt with Buttoned Flap Pockets</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹699</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="product-2" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-2.avif" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Premium Stretch Slim Fit Shirt</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹2999</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="product-3" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-3.avif" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">All Day Pique Polo T-Shirt</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹1399</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="product-4" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-4.avif" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shirt with Concealed Button Placket</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹699</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="product-4" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-5.avif" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Vintage Logo Heritage Crew-Neck T-Shirt</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹488</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="product-4" class="mt-9 mx-auto card md:w-4/6 sm:w-2/6 card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/products/product-6.avif" alt="Shoes" class="cursor-pointer" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shirt with Cuffed Sleeves</h2>
+          <p class="font-semibold text-sky-500 text-xl">₹599</p>
+          <div class="card-actions justify-end">
+            <button class="btn"><span class="font-semibold orange_gradient">Add to Cart</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-
   <!-- FOOTER -->
-  <footer class="text-gray-400 bg-gray-900 body-font mt-24">
+  <footer id="contact" class="text-gray-400 bg-gray-900 body-font mt-24">
     <div
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -93,7 +155,7 @@
               <a class="text-gray-400 hover:text-white cursor-pointer">FAQs</a>
             </li>
             <li>
-              <a class="text-gray-400 hover:text-white cursor-pointer">Contact</a>
+              <a class="text-gray-400 hover:text-white cursor-pointer">Contact us</a>
             </li>
           </nav>
         </div>
@@ -165,6 +227,7 @@
     });
   </script>
   <script src="./index.js"></script>
+
 </body>
 
 </html>
